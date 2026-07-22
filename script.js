@@ -13,4 +13,10 @@ addBtn.addEventListener("click",function(){
  li.innerText=task;
  taskList.appendChild(li);
  taskInput.value="";
+
+ deleteBtn.innerText="❌";  
+ li.appendChild(deleteBtn);
+ deleteBtn.addEventListener("click",function(){
+   li.remove();
+ })
 });
